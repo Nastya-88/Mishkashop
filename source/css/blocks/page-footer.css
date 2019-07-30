@@ -1,0 +1,38 @@
+.page-footer {
+  background-color: #f1f1f1;
+  width: 100%;
+  max-width: 767px;
+  padding: 13px 0 20px 0;
+  margin: 0 auto; }
+
+.page-footer__social {
+  margin: 0 auto;
+  border-bottom: 1px solid #e5e5e5; }
+
+.social__list {
+  display: flex;
+  list-style: none; }
+
+.copyright__link {
+  display: flex; }
+
+.social__item {
+  margin-right: 40px; }
+
+.social__item:last-child {
+  margin-right: 0; }
+
+.copyright {
+  margin: 0 auto; }
+
+.copyright__info {
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #000000;
+  margin-right: 28px;
+  margin-left: 39px; }
+
+.copyright__logo {
+  color: #63d1bb;
+  margin-right: 39px; }

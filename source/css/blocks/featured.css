@@ -1,0 +1,57 @@
+.featured {
+  position: relative;
+  margin: 0 auto; }
+
+.featured__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 28px;
+  margin-bottom: 5px; }
+
+.featured__subtitle {
+  font-size: 17px;
+  text-transform: uppercase;
+  line-height: 20px;
+  font-weight: bold;
+  color: #63d1bb;
+  margin-bottom: 28px; }
+
+.featured__info {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #444444;
+  margin-bottom: 28px; }
+
+.featured__image {
+  line-height: 0;
+  display: block;
+  margin: 0 auto; }
+
+.featured__price {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  padding: 25px 0;
+  color: #444444;
+  text-align: center;
+  display: block; }
+
+.featured__button {
+  width: 100%;
+  margin-bottom: 35px; }
+
+.featured::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 6px;
+  width: 100%;
+  background: url("../img/bg-zigzag-line.svg") repeat-x;
+  background-size: 300px 6px;
+  background-position: 6px; }

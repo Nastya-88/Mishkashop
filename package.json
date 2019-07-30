@@ -1,0 +1,70 @@
+{
+  "name": "mishka",
+  "version": "1.0.0",
+  "description": "Проект «Мишка» от HTML Academy",
+  "main": "index.html",
+  "scripts": {
+    "stylelint": "stylelint src/scss/**/*.scss --syntax sass",
+    "test": "gulp lintspaces && npm run stylelint",
+    "build": "gulp build",
+    "start": "npm run build && gulp serve",
+    "deploy": "npm run build && gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Nastya-88/Mishka.git"
+  },
+  "author": "Anastasiya Shishlakova <shishlakovanastya@gmail.com> (https://github.com/Nastya-88)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nastya-88/Mishka"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.26.3",
+    "css-mqpacker": "^7.0.0",
+    "del": "^3.0.0",
+    "gh-pages": "^2.0.1",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-lintspaces": "^1.0.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-svgstore": "^7.0.0",
+    "gulp-uglify": "^3.0.1",
+    "imagemin-jpegoptim": "^5.2.0",
+    "imagemin-webp": "^4.1.0",
+    "stylelint": "^9.6.0",
+    "stylelint-config-standard": "^18.2.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "picturefill": "^3.0.3",
+    "svg4everybody": "^2.1.9"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "defaults"
+            ]
+          }
+        }
+      ]
+    ]
+  }
+}

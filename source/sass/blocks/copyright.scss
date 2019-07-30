@@ -1,0 +1,47 @@
+.copyright__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 23px 0;
+}
+
+.copyright {
+  margin: 0 auto;
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+  }
+}
+.copyright__info {
+  margin: 0;
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #000000;
+  margin-right: 28px;
+  margin-left: 39px;
+
+  @media (min-width: $screen-tablet) {
+    margin-left: 0;
+  }
+
+}
+.copyright__logo {
+  display: block;
+  fill: $color-lightTeal;
+  margin-right: 39px;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $screen-tablet) {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Мишка — интернет-магазин игрушек</title>
+  <link rel="stylesheet" href="css/style.css">
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+</head>
+
+<body class="page page--nojs">
+  <header class="page-header page-header--index">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__logo-wrapper">
+          <a href="index.html" class="main-nav__item--logo main-nav__item">
+            <picture>
+                <source media="(min-width: 1250px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35"
+                     alt="Логотип магазина Мишка">
+            </picture>
+          </a>
+            <a class="main-nav__toggle js-toggle" href= "#"><span class="visually-hidden"></span></a>
+        </div>
+
+        <ul class="main-nav__list site-list">
+          <li class="main-nav__list-container main-nav__list-container--catalog site-list__item">
+            <a href="catalog.html" class="site-list__link main-nav__item--catalog">Каталог товаров</a>
+          </li>
+          <li class="main-nav__list-container main-nav__list-container--order site-list__item">
+            <a href="form.html"  class="site-list__link main-nav__item--order">Вязание на заказ</a>
+          </li>
+
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="main-nav__list-container main-nav__list-container--search user-list__item">
+            <a href="#" class="user-list__link main-nav__item--search">
+              <svg class="icon-search user-list__image" width="18" height="18">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+
+              <span class="user-list__search-title">Поиск по сайту</span>
+            </a>
+          </li>
+          <li class="main-nav__list-container main-nav__list-container--cart user-list__item">
+            <a href="#"  class="user-list__link user-list__link--cart main-nav__item--cart">
+              <svg class="icon-cart user-list__image" width="21" height="18">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>
+
+              <span class="user-list__cart-message">Корзина: пока пуста</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="main-nav__list stock-list">
+          <li class="main-nav__list-container main-nav__list-container--new stock-list__item">
+            <a href="#"  class="stock-list__link main-nav__item--new">Новые поступления</a>
+          </li>
+          <li class="main-nav__list-container main-nav__list-container--sale stock-list__item">
+            <a href="#"  class="stock-list__link main-nav__item--sale">Распродажа</a>
+          </li>
+          <li class="main-nav__list-container main-nav__list-container--shipping stock-list__item">
+            <a href="#" class="stock-list__link main-nav__item--shipping">Бесплатная доставка по России</a>
+          </li>
+
+        </ul>
+      </nav>
+  </header>
+  <main class="page-main">
+    <div class="page-main__form">
+      <h1 class="page-main__title">Вязание на заказ</h1>
+    </div>
+    <section class="form">
+      <div class="form-wrapper">
+        <p class="page-main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      </div>
+      <form class="to-order" method="post" action="">
+        <div class="to-order__group">
+          <div class="to-order__fieldset">
+            <legend class="to-order__legend">Тип</legend>
+            <div class="to-order__wrapper">
+              <label class="to-order__label to-order__label--type to-order__label--radio">
+                Аксессуар для интерьера
+                <input class="input input--hidden" type="radio" name="type" value="interiorAccessory" checked>
+                <div class="input-indicator input-indicator--radio"></div>
+              </label>
+              <label class="to-order__label to-order__label--type to-order__label--radio">
+                Детская игрушка
+                <input class="input input--hidden" type="radio" name="type" value="childToy">
+                <div class="input-indicator input-indicator--radio"></div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="to-order__group to-order__group--bg-color">
+          <div class="to-order__fieldset">
+            <legend class="to-order__legend">Цвет</legend>
+            <div class="to-order__wrapper">
+              <label class="to-order__label to-order__label--color to-order__label--checkbox">
+                Белый
+                <input class="input input--hidden" type="checkbox" name="white" checked>
+                <div class="input-indicator input-indicator--checkbox"></div>
+              </label>
+              <label class="to-order__label to-order__label--color to-order__label--checkbox">
+                Серый
+                <input class="input input--hidden" type="checkbox" name="gray" checked>
+                <div class="input-indicator input-indicator--checkbox"></div>
+              </label>
+              <label class="to-order__label to-order__label--color to-order__label--checkbox">
+                &laquo;Тиффани&raquo;
+                <input class="input input--hidden" type="checkbox" name="tiffany">
+                <div class="input-indicator input-indicator--checkbox"></div>
+              </label>
+              <label class="to-order__label to-order__label--color to-order__label--checkbox">
+                Черный
+                <input class="input input--hidden" type="checkbox" name="black">
+                <div class="input-indicator input-indicator--checkbox"></div>
+              </label>
+              <label class="to-order__label to-order__label--color to-order__label--checkbox">
+                Розовый
+                <input class="input input--hidden" type="checkbox" name="pink">
+                <div class="input-indicator input-indicator--checkbox"></div>
+              </label>
+              <label class="to-order__label to-order__label--color to-order__label--checkbox">
+                Оранжевый
+                <input class="input input--hidden" type="checkbox" name="orange">
+                <div class="input-indicator input-indicator--checkbox"></div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="to-order__group">
+          <div class="to-order__fieldset">
+            <legend class="to-order__legend">Фио</legend>
+            <div class="to-order__wrapper to-order__wrapper--name">
+              <label class="to-order__label to-order__label--name">
+                Имя:
+                <input class="input input--text" type="text" name="name" placeholder="Введите ваше имя*">
+              </label>
+              <label class="to-order__label to-order__label--name">
+                Фамилия:
+                <input class="input input--text" type="text" name="last-name" placeholder="Укажите фамилию*">
+              </label>
+              <label class="to-order__label to-order__label--name">
+                Отчество:
+                <input class="input input--text" type="text" name="name" placeholder="Отчество, если желаете">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="to-order__group to-order__group--bg-color">
+          <div class="to-order__fieldset to-order__fieldset--tel">
+            <legend class="to-order__legend">Тел</legend>
+            <div class="to-order__wrapper to-order__wrapper--tel">
+              <label class="to-order__label to-order__label--tel">
+                <input class="input input--tel-email input--text" type="text" name="tel" placeholder="+7 XXX XX XX*">
+                <svg class="to-order__label-icon" width="25" height="24">
+                  <use xlink:href="img/sprite.svg#icon-phone"></use>
+                </svg>
+
+              </label>
+            </div>
+          </div>
+          <div class="to-order__fieldset to-order__fieldset--email">
+            <legend class="to-order__legend">E-mail</legend>
+            <div class="to-order__wrapper to-order__wrapper--email">
+              <label class="to-order__label to-order__label--email">
+                <input class="input input--tel-email input--text" type="text" name="email" placeholder="Ваш Email*">
+                <svg class="to-order__label-icon" width="32" height="25">
+                  <use xlink:href="img/sprite.svg#icon-mail"></use>
+                </svg>
+
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="to-order__group">
+          <div class="to-order__fieldset  to-order__fieldset--optional-text-container">
+            <legend class="to-order__legend">Доп</legend>
+            <div class="to-order__wrapper to-order__wrapper--optional-text">
+              <textarea class="input input--optional-text" name="optional-text" cols="25" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="to-order__group">
+          <div class="container to-order__hint-container">
+            <span class="to-order__hint">*Поля обязательные для заполнения</span>
+            <button class="to-order__button button " type="submit">Отправить заказ</button>
+          </div>
+        </div>
+    </form>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__content-wrapper content-wrapper">
+      <a href="#" class="page-footer__logo">
+        <svg class="logo-footer" width="102" height="34">
+          <use xlink:href="img/sprite.svg#logo-footer"></use>
+        </svg>
+      </a>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">
+              <svg class="icon-insta" width="22" height="21">
+                <use xlink:href="img/sprite.svg#icon-insta"></use>
+              </svg>
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">
+              <svg class="icon-fb" width="15" height="29">
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
+              </svg>
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">
+              <svg class="icon-twitter" width="23" height="20">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
+        </ul>
+
+      <div class="copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru">
+          <p class="copyright__info">Разработано</p>
+
+          <svg class="copyright__logo" width="28" height="34">
+            <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+          </svg>
+        </a>
+
+      </div>
+    </div>
+  </footer>
+  <section class="add-to-cart">
+    <div class="add-to-cart__wrapper">
+      <h2 class="add-to-cart__title">Добавить в корзину</h2>
+      <p class="add-to-cart__info">Выберите размер:</p>
+      <form class="add-to-cart__form" method="GET">
+        <div class="add-to-cart__label-wrapper">
+          <p>
+            <input class="add-to-cart__radio" id="sizeS" type="radio" name="size" value="S" checked>
+            <label class="add-to-cart__label" for="sizeS">S</label>
+          </p>
+          <p>
+            <input class="add-to-cart__radio" id="sizeM" type="radio" name="size" value="M">
+            <label class="add-to-cart__label" for="sizeM">M</label>
+          </p>
+          <p>
+            <input class="add-to-cart__radio" id="sizeL" type="radio" name="size" value="L">
+            <label class="add-to-cart__label" for="sizeL">L</label>
+          </p>
+          <button class="add-to-cart__button button" type="submit">Добавить</button>
+        </div>
+      </form>
+    </div>
+    <div class="add-to-cart__mute-background"></div>
+  </section>
+
+  <script src="js/index.js"></script>
+</body>
+

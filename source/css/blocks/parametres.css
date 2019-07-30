@@ -1,0 +1,16 @@
+.parametres {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: normal;
+  color: #444444;
+  margin-bottom: 28px; }
+
+.parametres__item {
+  border-bottom: 1px solid #ececec; }
+
+.parametres__name,
+.parametres__value {
+  padding: 10px 0; }
+
+.parametres__value {
+  padding-left: 13px; }

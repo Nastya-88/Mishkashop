@@ -1,0 +1,233 @@
+.featured {
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 35px;
+
+  @media (min-width: $screen-desktop) {
+    padding-bottom: 95px;
+  }
+}
+
+.featured__content-wrapper {
+  margin: 0 auto;
+  padding: 0 30px;
+
+
+  @media (min-width: $screen-tablet) {
+    display: block;
+    padding: 0 50px;
+    padding-bottom: 60px;
+    position: relative;
+  }
+
+}
+
+.featured__title-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 28px;
+  margin-bottom: 5px;
+
+  @media (min-width: $screen-tablet) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding-top: 30px;
+    flex-grow: 1;
+    padding-left: 50px;
+    justify-content: flex-start;
+  }
+}
+.featured__title {
+  display: block;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  color: $color-black;
+  order: 5;
+  z-index: 1;
+
+  @media (min-width: $screen-tablet) {
+    font-size: 43px;
+    line-height: 50px;
+    order: 1;
+  }
+
+  @media (min-width: $screen-desktop) {
+    font-size: 53px;
+    line-height: 57px;
+    order: 2;
+    max-width: none;
+    margin: 0;
+
+  }
+
+}
+.featured__subtitle {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  text-transform: uppercase;
+  line-height: 20px;
+  font-weight: bold;
+  color: $color-lightTeal;
+  padding-right: 25px;
+  order: 10;
+
+  @media (min-width: $screen-tablet) {
+    line-height: 17px;
+    width: 100px;
+    padding-top: 5px;
+    text-align: center;
+    order: 2;
+  }
+   @media (min-width: $screen-desktop) {
+    order: 1;
+    margin-right: 10px;
+   }
+}
+
+.featured__description {
+  margin-bottom: 30px;
+  margin-top: 30px;
+
+  @media (min-width: $screen-tablet) {
+    margin-top: 0;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-left: 175px;
+    margin-top: 55px;
+    margin-right: 50px;
+
+  }
+}
+
+.featured__info {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: normal;
+  color: $color-gray;
+  margin-bottom: 28px;
+
+  @media (min-width: $screen-tablet) {
+    width: 293px;
+    font-size: 17px;
+    line-height: 30px;
+    order: 5;
+
+  }
+
+}
+
+.featured__images {
+  line-height: 0;
+  margin: 0 auto;
+
+
+  @media (min-width: $screen-tablet) {
+    margin: 0;
+    margin-top: 55px;
+    position: absolute;
+    right: 50px;
+    top: 75px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    z-index: -1;
+    top: -25px;
+    margin-top: 0px;
+    right: 100px;
+  }
+}
+
+.featured__image {
+    display: block;
+    width: 259px;
+    height: 315px;
+    margin: 0 auto;
+
+    @media (min-width: $screen-tablet) {
+    width: 335px;
+    height: 403px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 526px;
+    height: 624px;
+  }
+}
+
+.featured__price {
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $color-gray;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 26px;
+  display: block;
+
+  @media (min-width: $screen-tablet) {
+    margin: 0;
+    margin-bottom: 34px;
+    font-size: 20px;
+    width: 294px;
+  }
+  @media (min-width: $screen-desktop) {
+    margin-left: 175px;
+  }
+
+}
+.featured__button {
+  width: 100%;
+  margin: 0 auto;
+
+
+  @media (min-width: $screen-tablet) {
+    margin: 0;
+  }
+  @media (min-width: $screen-desktop) {
+    margin-left: 175px;
+  }
+}
+.featured::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 6px;
+  width: 100%;
+  background: url("../img/bg-zigzag-line.svg") repeat-x;
+  background-size: 300px 6px;
+  background-position: 6px;
+
+
+  @media (min-width: $screen-tablet) {
+    height: 17px;
+    background-size: 767px 17px;
+    background-position: 17px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: calc(100% - 200px);
+    left: 100px;
+    right: 100px;
+    height: 25px;
+    background-size: 1050px 25px;
+    background-position-x: -25px;
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .featured__image-block {
+    order: 10;
+  }
+}
+

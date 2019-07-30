@@ -1,0 +1,170 @@
+.input--hidden {
+    display: none;
+}
+
+.input:checked + .input-indicator--radio {
+  &::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $color-lightTeal;
+
+    @media (min-width: $screen-tablet) {
+    width: 22px;
+    height: 22px;
+    }
+
+  }
+}
+
+.input:checked + .input-indicator--checkbox {
+  &::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 22px;
+    border-right: 2px solid $color-black;
+    border-bottom: 2px solid $color-black;
+    top: 50%;
+    left: 50%;
+    transform: rotate(45deg) translate(-125%, -30%);
+
+    @media (min-width: $screen-tablet) {
+      width: 15px;
+      height: 29px;
+    }
+  }
+  }
+
+.input-indicator {
+  position: absolute;
+  width: 36px;
+  height: 35px;
+  background-color: transparent;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 2px solid;
+
+  @media (min-width: $screen-tablet) {
+    width: 48px;
+    height: 48px;
+  }
+
+  @media (min-width: $screen-desktop) {
+   width: 50px;
+   height: 50px;
+  }
+}
+
+.input-indicator--radio {
+  border-radius: 50%;
+}
+
+.input--text {
+  width: 100%;
+  font-size: 17px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: none;
+  border-bottom: 2px solid $color-black;
+  color: $color-gray;
+  background-color: transparent;
+
+  &::placeholder {
+    font-size: 17px;
+    color: $color-gray;
+    opacity: 0.3;
+  }
+
+  &:hover {
+    border-bottom-color: $color-lightTeal;
+    outline: none;
+
+  }
+
+  &:focus {
+    border-bottom-color: $color-lightTeal;
+    outline: none;
+  }
+  @media (min-width: $screen-tablet) {
+    padding-top: 15px;
+    padding-left: 18px;
+    margin-left: 18px;
+  }
+
+}
+
+.input--tel-email {
+  margin-left: 0;
+}
+
+.input--optional-text {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  margin-top: 22px;
+  padding: 15px;
+  border: 2px solid $color-black;
+
+  &:hover {
+    border-color: $color-lightTeal;
+    outline: none;
+  }
+
+  &:focus {
+    border-color: $color-lightTeal;
+    outline: none;
+  }
+
+  &::placeholder {
+    font-size: 17px;
+    color: $color-gray;
+    opacity: 0.3;
+
+    @media (min-width: $screen-tablet) {
+      font-size: 19px;
+
+    }
+
+  }
+
+    @media (min-width: $screen-tablet) {
+    margin-top: 0;
+    font-size: 19px;
+  }
+
+}
+
+.input-indicator--mobile-cart {
+  position: relative;
+  display: block;
+  width: 78px;
+  height: 16px;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  border: 2px solid #ececec;
+  transform: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #c7c7c7;
+  }
+
+  @media (min-width: $screen-tablet) {
+    width: 108px;
+  }
+
+}
+
+.input:checked + .input-indicator--mobile-cart {
+  border-color: $color-lightTeal;
+}

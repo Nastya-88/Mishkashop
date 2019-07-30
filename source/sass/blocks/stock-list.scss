@@ -1,0 +1,49 @@
+.stock-list__link {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+  display: block;
+  text-decoration: none;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $screen-tablet) {
+    font-size: 15px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    font-size: 15px;
+  }
+}
+
+.stock-list {
+
+  @media (min-width: $screen-tablet) {
+    padding-right: 50px;
+    order: 3;
+    width: 40%;
+    background-color: #f9f9f9;
+
+  }
+
+  @media (min-width: $screen-desktop) {
+    order: 3;
+    width: 100%;
+    padding-right: 0;
+    justify-content: flex-start;
+    padding: 0 100px;
+
+  }
+}
+
+

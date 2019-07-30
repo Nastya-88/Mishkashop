@@ -1,0 +1,14 @@
+.page-header {
+  background-color: #fff;
+  border-bottom: 1px solid #ececec;
+  margin: 0 auto;
+
+  @media (min-width: $screen-tablet) {
+    border-bottom: none;
+    background-color: #f9f9f9;
+  }
+}
+
+
+
+

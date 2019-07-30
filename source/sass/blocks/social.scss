@@ -1,0 +1,22 @@
+.social__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: baseline;
+  justify-content: center;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 23px 0;
+
+  @media (min-width: $screen-tablet) {
+    border-bottom: none;
+    padding: 0;
+  }
+}
+
+.social__item {
+  margin-right: 40px;
+}
+.social__item:last-child {
+  margin-right: 0;
+}

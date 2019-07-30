@@ -1,0 +1,13 @@
+.container {
+  width: 260px;
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $screen-tablet) {
+    width: 668px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 1150px;
+  }
+}

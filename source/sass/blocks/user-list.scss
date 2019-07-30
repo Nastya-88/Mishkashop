@@ -1,0 +1,134 @@
+.user-list__link {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+  display: block;
+  text-decoration: none;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $screen-tablet) {
+    font-size: 15px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    font-size: 17px;
+    padding-right: 30px;
+    padding-left: 32px;
+  }
+}
+
+.logo-footer {
+
+  &:hover {
+    fill: #46c1ae;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+
+.icon-search,
+.icon-cart {
+  fill: #d3d2d2;
+
+  &:hover {
+    fill: #63d1bb;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+
+
+.user-list__link {
+
+  @media (min-width: $screen-tablet) {
+    border-left: 1px solid #ececec;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+    padding-left: 32px;
+    min-height: 89px;
+  }
+}
+
+
+
+.user-list__image {
+  margin-right: 25px;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  // opacity: 0.2;
+  transform: translateY(-50%);
+
+  @media (min-width: $screen-tablet) {
+    position: static;
+    flex-shrink: 0;
+    margin-top: 15px;
+  }
+
+
+}
+
+
+.icon-fb,
+.icon-insta,
+.icon-twitter {
+
+  &:hover {
+    fill: #63d1bb;
+  }
+
+  &:active {
+    fill: #d0f1ea;
+  }
+}
+
+.user-list {
+
+  @media (min-width: $screen-tablet) {
+    padding-right: 50px;
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    border-bottom: 1px solid #ececec;
+  }
+
+  @media (min-width: $screen-desktop) {
+    order: 2;
+    width: 38%;
+    padding-right: 100px;
+
+  }
+}
+
+.user-list__item {
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    align-items: center;
+  }
+}
+.user-list__search-title {
+
+  @media (min-width: $screen-tablet) {
+    display: none;
+  }
+}
